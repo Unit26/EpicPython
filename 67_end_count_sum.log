@@ -1,0 +1,13 @@
+total = 0
+while True:
+    x = input('Введите число или Стоп для выхода: ')
+    if x == "Стоп":
+        print("Сумма введенных чисел: ", total)
+        break
+    elif x.isalpha():
+        print(x = input('Введите ЧИСЛО или Стоп для выхода: '))
+    else:
+        y = int(x)
+        total = total + y
+        
+        

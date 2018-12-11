@@ -1,7 +1,6 @@
 from math import pi
-num = pi
 def fun(x):
-    return f'{num:.xf}'
+    return f'Ответ: {pi:.{x}f}'
 
 
 x = int(input('Сколько знаков после запятой? '))
