@@ -1,20 +1,19 @@
 import random
 attempt = 3
-def fun():
-    return random.randint(0, 10)
 
-x = fun()
-print("Компьютер загадал число. \nУ вас есть три попытки. Удачи!" )
+x = random.randint(0, 10)
+print("Компьютер загадал число. \nУ вас есть три попытки. Удачи!")
 while attempt > 0:
     text = input("Попробуйте угадать: ")
     if text == "Выход":
         break
     else:
-        int(text)
-        if text == x:
+        num = int(text)
+        if num == x:
             print("Победа!")
+            break
         else:
-            if text > x:
+            if num > x:
                 print("Попробуйте число меньше!")
                 attempt -= 1
                 print("Попыток осталось: ", attempt)

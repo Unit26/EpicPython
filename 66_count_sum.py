@@ -1,9 +1,3 @@
-s = int(input())
-total = 0
-for i in range(len(str(s))):
-    if s[i] % 2 == 0:
-        continue
-    total = total + int(s[i]**2)
-
-print("Сумма: ", total)
-        
+s = input("Введите число: ")
+total = sum([int(x)**2 for x in s if int(x) % 2 != 0])
+print(total)
