@@ -1,4 +1,5 @@
 l = []
+from pprint import pprint
 while True:
     print('Простой todo: \n  1. Добавить задачу. \n  2. Вывести список задач. \n  3. Выход. \n')
     text = int(input('Введите число: '))
@@ -8,8 +9,6 @@ while True:
         a = input('Сформулируйте задачу: ')
         b = input('Добавьте категорию: ')
         c = input('Добавьте дату: ')
-        l.append([a, b, c])
+        l.append({'Задание': a, 'Категория': b, 'Дата': c})
     else:
-        for x in l:
-            a, b, c = x
-            print("Задача: " + a + "  Категория: " + b + "  Дата: " + c)
+        pprint(l)

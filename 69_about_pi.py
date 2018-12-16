@@ -13,7 +13,7 @@ for i in L:
         nums.append(num)
     except ValueError:
         continue
-print(nums)
-print(len(nums))
-print(sum(nums))
-print(max(nums))
+print("Числа: ", nums)
+print("Количество: ", len(nums))
+print("Сумма: ", sum(nums))
+print("Максимальное: ", max(nums))
