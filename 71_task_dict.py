@@ -13,3 +13,4 @@ while True:
         for x in l:
             for c in x:
                 print(c, x[c])
+ 
