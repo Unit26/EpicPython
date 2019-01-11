@@ -1,4 +1,6 @@
 from math import sin
+
+
 def fun(x):
     if 0.2 <= x <= 0.9:
         return sin(x)

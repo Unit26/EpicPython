@@ -1,4 +1,6 @@
 from math import pi
+
+
 def fun(x):
     return f'Ответ: {pi:.{x}f}'
 

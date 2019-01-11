@@ -15,9 +15,8 @@ while attempt > 0:
         else:
             if num > x:
                 print("Попробуйте число меньше!")
-                attempt -= 1
-                print("Попыток осталось: ", attempt)
             else:
                 print("Попробуйте число больше!")
-                attempt -= 1
-                print("Попыток осталось: ", attempt)
+
+            attempt -= 1
+            print("Попыток осталось: ", attempt)
